@@ -38,14 +38,15 @@ export default function Content() {
     return (
         <>
             <div className="b py-16 bg-gray-50 px-4 sm:px-6 h-screen w-screen flex justify-center items-center">
-            <ul>
+           
+                <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
+                <ul>
       <li>
         <Link href="/">
           <a>Home</a>
         </Link>
       </li>           
     </ul>
-                <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
                     <form
                         onSubmit={handleSubmit(onSubmitForm)}
                         className="grid grid-cols-1 gap-y-6">
