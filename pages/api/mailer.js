@@ -4,12 +4,12 @@ export default async (req, res) => {
   const { name, email, message, phone } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: 'smtp.elasticemail.com',
-    port: 2525,
+    host: 'smtp.gmail.com',
+    port: 465,
     secure: true,
     auth: {
-      user: process.env.SMTP_KEY_ELASTIC_USER,
-      pass: process.env.SMTP_KEY_ELASTIC_PASS,
+      user: process.env.SMTP_KEY_USER,
+      pass: process.env.SMTP_KEY_PASS,
     },
   });
 
