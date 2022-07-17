@@ -12,7 +12,7 @@ export default function Content() {
     async function onSubmitForm(values) {
         let config = {
             method: 'post',
-            url: `${process.env.NEXT_PUBLIC_API_URL}/api/mailer`,
+            url: 'https://testemailsend.vercel.app/api/mailer',
             headers: {
                 'Content-Type': 'application/json',
             },
