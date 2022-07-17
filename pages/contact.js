@@ -104,7 +104,7 @@ export default function Content() {
                                 Phone
                             </label>
                             <input
-                                type="text"
+                                type="tel"
                                 name="phone"
                                 {...register}
                                 className="block w-full shadow py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2"
