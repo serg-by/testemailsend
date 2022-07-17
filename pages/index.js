@@ -1,4 +1,4 @@
-import { TextInput, Textarea, Button, Container, Group, Box  } from "@mantine/core";
+import { TextInput, Textarea, Button, Container, Group, Box } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { showNotification } from "@mantine/notifications";
 import Link from 'next/link'
@@ -53,22 +53,22 @@ export default function Home() {
 
   return (
     <>
-      
+
       <Container size={200} px={0} mt="xl">
 
-      <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>      
-      <li>
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
-      </li>       
-    </ul>
-      
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
+          </li>
+        </ul>
+
         <Box mx="auto">
           <form onSubmit={submitForm.onSubmit(values => handleSubmit(values))}>
             <TextInput required label="Email" placeholder="exemple@exemple.com" {...submitForm.getInputProps('email')} />

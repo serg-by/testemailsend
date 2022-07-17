@@ -12,7 +12,7 @@ export default function Content() {
     async function onSubmitForm(values) {
         let config = {
             method: 'post',
-            url: `${process.env.NEXT_PUBLIC_API_URL}/api/mailer`,
+            url: 'https://testemailsend.vercel.app/api/mailer',
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -38,15 +38,11 @@ export default function Content() {
     return (
         <>
             <div className="b py-16 bg-gray-50 px-4 sm:px-6 h-screen w-screen flex justify-center items-center">
-           
+
                 <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
-                <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>           
-    </ul>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
                     <form
                         onSubmit={handleSubmit(onSubmitForm)}
                         className="grid grid-cols-1 gap-y-6">
@@ -57,7 +53,7 @@ export default function Content() {
                             <input
                                 type="text"
                                 name="name"
-                                {...register("name",{
+                                {...register("name", {
                                     required: {
                                         value: true,
                                         message: 'You must enter your name',
@@ -77,13 +73,13 @@ export default function Content() {
                             <input
                                 name="email"
                                 type="text"
-                                {...register("email",{
+                                {...register("email", {
                                     required: {
                                         value: true,
                                         message: 'You must enter your email address',
                                     },
                                     minLength: {
-                                        value: 8,
+                                        value: 4,
                                         message: 'This is not long enough to be an email',
                                     },
                                     maxLength: {
@@ -122,7 +118,7 @@ export default function Content() {
                             <textarea
                                 name="message"
                                 rows="4"
-                                {...register("message",{
+                                {...register("message", {
                                     required: {
                                         value: true,
                                         message: 'You need to enter your message',
@@ -132,7 +128,7 @@ export default function Content() {
                                         message: "Your message can't be more than 1000 characters",
                                     },
                                     minLength: {
-                                        value: 20,
+                                        value: 5,
                                         message: 'Your message must be longer than this!',
                                     },
                                 })}
