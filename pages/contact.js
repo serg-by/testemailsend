@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useToast } from '../hooks/useToas';
-
+import Link from 'next/link'
 
 export default function Content() {
 
@@ -38,6 +38,13 @@ export default function Content() {
     return (
         <>
             <div className="b py-16 bg-gray-50 px-4 sm:px-6 h-screen w-screen flex justify-center items-center">
+            <ul>
+      <li>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+      </li>           
+    </ul>
                 <div className="mx-auto w-full max-w-2xl rounded-xl bg-white p-8 shadow">
                     <form
                         onSubmit={handleSubmit(onSubmitForm)}
