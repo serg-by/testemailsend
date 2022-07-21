@@ -1,3 +1,5 @@
+[![Build Standalone Node CLI](https://github.com/serg-by/testemailsend/actions/workflows/build.yml/badge.svg)](https://github.com/serg-by/testemailsend/actions/workflows/build.yml)
+
 ### Next.js Tailwind temlate (PNPM package)
 
 ## Getting Started
