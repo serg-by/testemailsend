@@ -14,7 +14,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 # Overview
 
-- `components/*` - Различные компоненты.
-- `pages/*` - Все остальные статические страницы.
-- `public/*` - Статические элементы, включая шрифты и изображения.
-- `styles/*` - Небольшое количество глобальных стилей. Основная библиотека Tailwind CSS.
+- `components/*` - Various components.
+- `pages/*` - All other static pages.
+- `public/*` - Static elements, including fonts and images.
+- `styles/*` - Global styles and css modules. Core Tailwind CSS library.
