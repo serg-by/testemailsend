@@ -1,6 +1,6 @@
 [![Build Standalone Node CLI](https://github.com/serg-by/testemailsend/actions/workflows/build.yml/badge.svg)](https://github.com/serg-by/testemailsend/actions/workflows/build.yml)
 
-### Next.js Tailwind temlate (PNPM package)
+# Next.js Tailwind temlate (PNPM package)
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 
-# Overview
+## Overview
 
 - `components/*` - Various components.
 - `pages/*` - All other static pages.
