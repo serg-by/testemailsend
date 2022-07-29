@@ -7,8 +7,8 @@ export default async function handler(req, res){
 if(req.method !== "POST") {
     return res.status(405).json({error: "Method not allowed"})
 }
-// const request = await fetch('https://api.airtable.com/v0/appAHdmWAJXY63PvG/tesnow',{
-const request = await fetch('https://api.telegram.org/bot5434566567:AAF9DWIaN1Pk9eCBdU1BezfxhCND_E2r41c/sendMessage',{
+    
+const request = await fetch('https://api.airtable.com/v0/appAHdmWAJXY63PvG/tesnow',{
     method: 'POST',
     headers: {
         Authorization: `Bearer ${process.env.AIRTABLE_TOKEN}`,
