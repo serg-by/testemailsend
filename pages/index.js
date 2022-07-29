@@ -24,7 +24,7 @@ export default function Home() {
   });
 
   const handleSubmit = async values => {
-    const request = await fetch('/api/submit', {
+    const request = await fetch('/api/teleg', {
       method: 'POST',
       body: JSON.stringify(values)
     });
